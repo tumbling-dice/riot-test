@@ -93,16 +93,6 @@ h6, .h6 {
   color: #999;
 }
 
-
-/*
- * Main column and sidebar layout
- */
-
-.blog-main {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 /* Sidebar modules for boxing content */
 .sidebar-module {
   padding: 15px;
