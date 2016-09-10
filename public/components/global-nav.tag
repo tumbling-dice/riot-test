@@ -2,7 +2,14 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <nav-header></nav-header>
-      <navbar></navbar>
+      <div id="navbar" class="navbar-collapse collapse">
+        <navbar></navbar>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="./">scope test</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </global-nav>
@@ -20,13 +27,19 @@
 </nav-header>
 
 <navbar>
-  <div id="navbar" class="navbar-collapse collapse">
-    <ul class="nav navbar-nav">
-      <li each="{ nav in navs }" class="{ active: isActive(nav.link) }">
-        <a href="{ nav.link }">{ nav.title }</a>
-      </li>
-    </ul>
-  </div>
+  <ul class="nav navbar-nav">
+    <li each="{ nav in navs }" class="{ active: isActive(nav.link) }">
+      <a href="{ nav.link }">{ nav.title }</a>
+    </li>
+  </ul>
+
+  <style scoped>
+    /* bootstrapの指定が複雑すぎるので!importantで強制的に上書き */
+    .active > a {
+      background-color: #BBDEFB !important;
+    }
+
+  </style>
 
   <script>
     this.navs = [
