@@ -132,24 +132,6 @@ h6, .h6 {
   border-radius: 30px;
 }
 
-
-/*
- * Blog posts
- */
-
-.blog-post {
-  margin-bottom: 60px;
-}
-.blog-post-title {
-  margin-bottom: 5px;
-  font-size: 40px;
-}
-.blog-post-meta {
-  margin-bottom: 20px;
-  color: #999;
-}
-
-
 /*
  * Footer
  */
